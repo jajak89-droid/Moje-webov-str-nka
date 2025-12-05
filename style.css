@@ -8,68 +8,71 @@ body.dark {
     --text: #ffffff;
 }
 
-/* --- Body s dvěma obrázky na pozadí --- */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: var(--bg);
     color: var(--text);
+    background-color: var(--bg);
     transition: 0.3s;
 
-    background-image: url('vsb-bg1.jpeg'), url('vsb-bg2.jpeg');
-    background-repeat: no-repeat, no-repeat;
-    background-position: left top, right top;
-    background-size: 50% 100%, 50% 100%;
-    background-attachment: fixed, fixed;
+
+    background-image: url('vsb-bg1.jpeg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain; 
+    background-attachment: scroll;
 }
 
-/* --- Navbar --- */
+
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 15px;
-    background: #2a7cf5;
+    background: rgba(42,124,245,0.8);
 }
 
-.navbar a {
+.navbar a, .navbar button {
     color: white;
     text-decoration: none;
     margin-right: 15px;
     font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-/* --- Hero sekce --- */
 .hero {
     text-align: center;
     padding: 80px 20px;
 }
 
-/* --- Obsah --- */
 .content {
     padding: 40px;
     max-width: 800px;
     margin: auto;
+    background: rgba(255,255,255,0.8); 
 }
 
-/* --- Vánoční GIF přes spodní stranu --- */
 .xmas-bottom {
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%; /* přes celou šířku stránky */
-    height: auto;
+    width: auto;
+    height: 150px;
+    object-fit: cover;
     z-index: 9999;
     pointer-events: none;
 }
 
-/* --- Responzivní design --- */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
         text-align: center;
     }
-    .navbar a {
-        margin: 10px 0;
+    .navbar a, .navbar button {
+        margin: 5px 0;
     }
 }

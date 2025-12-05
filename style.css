@@ -43,4 +43,11 @@ body.dark {
     .navbar a {
         margin: 10px 0;
     }
+    .logo {
+    width: 200px; 
+    max-width: 80%;
+    display: block;
+    margin: 20px auto;
+}
+
 }

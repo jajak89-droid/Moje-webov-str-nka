@@ -89,14 +89,6 @@ body.dark .content {
     pointer-events: none;
 }
 
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        text-align: center;
-    }
-    .navbar a, .navbar button {
-        margin: 10px 0;
-}
 .download-section button {
     background-color: #2a7cf5;
     color: white;
@@ -111,5 +103,14 @@ body.dark .content {
 
 .download-section button:hover {
     background-color: #1b5fbf;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar a, .navbar button {
+        margin: 10px 0;
 }
 }

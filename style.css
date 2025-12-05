@@ -44,15 +44,14 @@ body.dark {
         margin: 10px 0;
     }
  .body {
-    background-image: url('vsb-bg.png');
-    background-repeat: no-repeat;
-    background-size: contain;   /* nebo cover — záleží, co chceš */
-    background-position: center top;
-    background-attachment: fixed; /* logo zůstává na místě při scrollování */
-    opacity: 1;
+    background: url('vanoce.gif') no-repeat center center fixed;
+    background-size: cover;
 }
-.xmas-gif {
-    width: 200px;
+
+}
+.logo {
+    width: 200px; 
+    max-width: 80%;
     display: block;
     margin: 20px auto;
 }

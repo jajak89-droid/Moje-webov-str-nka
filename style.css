@@ -1,3 +1,14 @@
+:root {
+    --bg: #ffffff;
+    --text: #000000;
+}
+
+body.dark {
+    --bg: #1c1c1c;
+    --text: #ffffff;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,36 +16,40 @@ body {
     background: var(--bg);
     color: var(--text);
     transition: 0.3s;
+
+    /* --- Dva obrázky na pozadí --- */
+    background-image: url('vsb.jpeg'), url('vsb2.jpeg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right top;
+    background-size: 50% 100%, 50% 100%;
+    background-attachment: fixed, fixed;
 }
-:root {
-    --bg: #ffffff;
-    --text: #000000;
-}
-body.dark {
-    --bg: #1c1c1c;
-    --text: #ffffff;
-}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     padding: 15px;
     background: #2a7cf5;
 }
+
 .navbar a {
     color: white;
     text-decoration: none;
     margin-right: 15px;
     font-weight: bold;
 }
+
 .hero {
     text-align: center;
     padding: 80px 20px;
 }
+
 .content {
     padding: 40px;
     max-width: 800px;
     margin: auto;
 }
+
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -43,23 +58,5 @@ body.dark {
     .navbar a {
         margin: 10px 0;
     }
- body {
-    /* dva obrázky */
-    background-image: url('vsb.jpeg'), url('vsb2.jpeg');
-    
-    /* žádné opakování */
-    background-repeat: no-repeat, no-repeat;
-    
-    /* první vlevo nahoře, druhý vpravo nahoře */
-    background-position: left top, right top;
-    
-    /* každý zabírá polovinu šířky a celou výšku */
-    background-size: 50% 100%, 50% 100%;
-    
-    /* zůstávají na místě při scrollování */
-    background-attachment: fixed, fixed;
 }
 
-
-
-}

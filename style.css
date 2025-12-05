@@ -43,11 +43,14 @@ body.dark {
     .navbar a {
         margin: 10px 0;
     }
-    .logo {
-    width: 200px; 
-    max-width: 80%;
-    display: block;
-    margin: 20px auto;
+ .body {
+    background-image: url('vsb-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;   /* nebo cover — záleží, co chceš */
+    background-position: center top;
+    background-attachment: fixed; /* logo zůstává na místě při scrollování */
+    opacity: 1;
 }
+
 
 }

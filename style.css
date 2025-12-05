@@ -43,18 +43,23 @@ body.dark {
     .navbar a {
         margin: 10px 0;
     }
- .body {
-    background: url('vanoce.gif') no-repeat center center fixed;
-    background-size: cover;
+ body {
+    /* dva obrázky */
+    background-image: url('vsb.jpeg'), url('vsb2.jpeg');
+    
+    /* žádné opakování */
+    background-repeat: no-repeat, no-repeat;
+    
+    /* první vlevo nahoře, druhý vpravo nahoře */
+    background-position: left top, right top;
+    
+    /* každý zabírá polovinu šířky a celou výšku */
+    background-size: 50% 100%, 50% 100%;
+    
+    /* zůstávají na místě při scrollování */
+    background-attachment: fixed, fixed;
 }
 
-}
-.logo {
-    width: 200px; 
-    max-width: 80%;
-    display: block;
-    margin: 20px auto;
-}
 
 
 }

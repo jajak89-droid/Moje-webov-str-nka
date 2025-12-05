@@ -51,6 +51,11 @@ body.dark {
     background-attachment: fixed; /* logo zůstává na místě při scrollování */
     opacity: 1;
 }
+.xmas-gif {
+    width: 200px;
+    display: block;
+    margin: 20px auto;
+}
 
 
 }

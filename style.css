@@ -8,6 +8,7 @@ body.dark {
     --text: #ffffff;
 }
 
+/* --- Body s dvěma obrázky na pozadí --- */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -16,13 +17,14 @@ body {
     color: var(--text);
     transition: 0.3s;
 
-    background-image: url('vsb.jpeg'), url('vsb2.jpeg');
+    background-image: url('vsb-bg1.jpeg'), url('vsb-bg2.jpeg');
     background-repeat: no-repeat, no-repeat;
     background-position: left top, right top;
     background-size: 50% 100%, 50% 100%;
     background-attachment: fixed, fixed;
 }
 
+/* --- Navbar --- */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -37,17 +39,31 @@ body {
     font-weight: bold;
 }
 
+/* --- Hero sekce --- */
 .hero {
     text-align: center;
     padding: 80px 20px;
 }
 
+/* --- Obsah --- */
 .content {
     padding: 40px;
     max-width: 800px;
     margin: auto;
 }
 
+/* --- Vánoční GIF přes spodní stranu --- */
+.xmas-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* přes celou šířku stránky */
+    height: auto;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+/* --- Responzivní design --- */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -56,11 +72,4 @@ body {
     .navbar a {
         margin: 10px 0;
     }
-.xmas-corner {
-    top: 20px;
-    left: 20px;
-  
 }
-
-}
-
